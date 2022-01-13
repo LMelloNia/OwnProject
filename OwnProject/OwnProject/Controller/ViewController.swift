@@ -44,6 +44,13 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         let value = scrollView.contentOffset.x/scrollView.frame.size.width
         setPageControlSelectedPage(currentPage: Int(round(value)))
     }
+    @IBAction func scondButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToSecondView", sender: self)
+    }
+    
+    @IBAction func thirdButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToThirdView", sender: self)
+    }
 }
 
 
